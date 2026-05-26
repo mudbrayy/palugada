@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Palugada.id</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="images/WhatsApp Image 2026-05-21 at 21.30.06.jpeg"></script>
+
+  <style>
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#f5f7fb;
+      overflow-x:hidden;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    .gradient{
+      background:linear-gradient(135deg,#2563eb,#1e40af);
+    }
+
+    .gradient-text{
+      background:linear-gradient(135deg,#2563eb,#1e40af);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .card-hover:hover{
+      transform:translateY(-8px);
+      transition:.3s ease;
+      box-shadow:0 20px 40px rgba(0,0,0,.08);
+    }
+
+    .hero-bg{
+      background:
+      linear-gradient(rgba(255,255,255,.92),rgba(255,255,255,.96)),
+      url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-lg shadow-sm z-50">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-4">
+
+        <img
+          src="images/1779378512501 (2).png"
+          class="w-38 h-20 rounded-xl"
+          alt="Logo"
+        />
+
+        <div>
+
+          <h1 class="text-2xl font-extrabold text-gray-900">
+            
+          </h1>
+
+          <p class="text-sm text-gray-500">
+            
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Menu -->
+      <nav class="hidden md:flex gap-8 font-medium text-gray-700">
+
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+        <a href="#whyus" class="hover:text-blue-600">Why Us</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+
+      </nav>
+
+      <!-- Button -->
+      <button
+        onclick="scrollToSection('contact')"
+        class="gradient text-white px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
+      >
+        Konsultasi
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero-bg min-h-screen flex items-center pt-32">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT -->
+      <div data-aos="fade-right">
+
+        <p class="text-blue-600 font-semibold mb-5 tracking-widest">
+          PROFESSIONAL DIGITAL SOLUTION
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8 text-gray-900">
+
+          Jasa Suruh,
+          <span class="gradient-text">
+            Semua Beres!
+          </span>
+
+        </h1>
+
+        <p class="text-gray-600 text-lg leading-relaxed mb-10">
+
+          Kami hadir untuk membantu aktivitas harian Anda lebih mudah. Dengan layanan cepat, responsif, dan terpercaya, semua kebutuhan bisa selesai tanpa ribet. Tinggal suruh, kami jalan dan kerjakan!
+
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+
+          <button
+            onclick="scrollToSection('services')"
+            class="gradient text-white px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition"
+          >
+            Lihat Layanan
+          </button>
+
+          <button
+            onclick="scrollToSection('portfolio')"
+            class="bg-white border border-gray-300 px-8 py-4 rounded-2xl hover:bg-gray-100 transition"
+          >
+            Portfolio
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div data-aos="fade-left">
+
+        <img
+          src="images/WhatsApp Image 2026-05-21 at 21.30.53.jpeg"
+          class="rounded-3xl shadow-2xl"
+          alt="Hero"
+        />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- IMAGE -->
+        <div data-aos="fade-right">
+
+          <img
+            src="images/WhatsApp Image 2026-05-21 at 22.28.30.jpeg"
+            class="rounded-3xl shadow-2xl"
+            alt="About"
+          />
+
+        </div>
+
+        <!-- CONTENT -->
+        <div data-aos="fade-left">
+
+          <p class="text-blue-600 font-semibold mb-4">
+            TENTANG KAMI
+          </p>
+
+          <h2 class="text-5xl font-bold text-gray-900 mb-8">
+            Solusi layanan untuk berbagai kebutuhan Anda
+          </h2>
+
+          <p class="text-gray-600 leading-relaxed mb-8">
+
+            Kami adalah penyedia jasa “suruh” yang siap membantu berbagai kebutuhan harian, pribadi, maupun usaha Anda dengan cepat, aman, dan terpercaya. Mulai dari titip beli, antar barang, bayar tagihan, antri, hingga bantuan pekerjaan sederhana lainnya — kami hadir untuk memudahkan aktivitas Anda tanpa ribet.
+
+Dengan pelayanan yang responsif dan profesional, kami berkomitmen memberikan solusi praktis bagi Anda yang memiliki keterbatasan waktu, tenaga, atau mobilitas. Kepuasan pelanggan menjadi prioritas utama kami, sehingga setiap tugas dikerjakan dengan penuh tanggung jawab dan ketepatan.
+
+Kami percaya bahwa bantuan kecil bisa memberikan dampak besar dalam kehidupan sehari-hari. Karena itu, layanan kami dibuat fleksibel, mudah dihubungi, dan siap membantu kapan pun dibutuhkan
+
+          </p>
+
+          <div class="grid grid-cols-2 gap-6">
+
+            <div class="bg-gray-50 p-6 rounded-2xl shadow-md">
+
+              <h3 class="text-4xl font-bold text-blue-600 mb-3">
+                1,5+
+              </h3>
+
+              <p class="text-gray-600">
+                Tahun Pengalaman
+              </p>
+
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-2xl shadow-md">
+
+              <h3 class="text-4xl font-bold text-blue-600 mb-3">
+                100+
+              </h3>
+
+              <p class="text-gray-600">
+                Project Selesai
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-20">
+
+        <h2 class="text-5xl font-bold text-gray-900 mb-6">
+          Layanan Kami
+        </h2>
+
+        <p class="text-gray-600">
+            Berbagai layanan profesional untuk memenuhi kebutuhan Anda.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- CARD -->
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover">
+
+          <div class="gradient text-white p-4 rounded-2xl w-fit mb-6">
+            <i data-lucide="monitor-smartphone"></i>
+          </div>
+
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Jasa Desain Grafis
+          </h3>
+
+          <p class="text-gray-600 mb-6">
+            desain berkualitas untuk identitas yang berkelas.
+          </p>
+
+          <button
+            onclick="showService('+62 813-9832-2325')"
+            class="gradient text-white px-5 py-3 rounded-xl"
+          >
+            Detail
+          </button>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover">
+
+          <div class="gradient text-white p-4 rounded-2xl w-fit mb-6">
+            <i data-lucide="palette"></i>
+          </div>
+
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Jasa Dokumen Dan Berkas
+          </h3>
+
+          <p class="text-gray-600 mb-6">
+            Desain modern dengan pengalaman pengguna terbaik.
+          </p>
+
+          <button
+            onclick="showService('+62 857-1584-0658')"
+            class="gradient text-white px-5 py-3 rounded-xl"
+          >
+            Detail
+          </button>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover">
+
+          <div class="gradient text-white p-4 rounded-2xl w-fit mb-6">
+            <i data-lucide="rocket"></i>
+          </div>
+
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Jasa Suruh
+          </h3>
+
+          <p class="text-gray-600 mb-6">
+            Apapun keperluannya, kami siap
+          </p>
+
+          <button
+            onclick="showService('+62 878-0206-4953')"
+            class="gradient text-white px-5 py-3 rounded-xl"
+          >
+            Detail
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-20">
+
+        <h2 class="text-5xl font-bold text-gray-900 mb-6">
+          Portfolio
+        </h2>
+
+        <p class="text-gray-600">
+          Beberapa project terbaik yang telah kami kerjakan.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- ITEM -->
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover">
+
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          />
+
+          <div class="p-8">
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Corporate Website
+            </h3>
+
+            <p class="text-gray-600 mb-6">
+              Website profesional untuk perusahaan modern.
+            </p>
+
+            <button
+              onclick="openProject()"
+              class="gradient text-white px-5 py-3 rounded-xl"
+            >
+              Lihat Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover">
+
+          <img
+            src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          />
+
+          <div class="p-8">
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Dashboard System
+            </h3>
+
+            <p class="text-gray-600 mb-6">
+              Dashboard analytics modern dan interaktif.
+            </p>
+
+            <button
+              onclick="openProject()"
+              class="gradient text-white px-5 py-3 rounded-xl"
+            >
+              Lihat Project
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden card-hover">
+
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+            class="h-64 w-full object-cover"
+          />
+
+          <div class="p-8">
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Branding Design
+            </h3>
+
+            <p class="text-gray-600 mb-6">
+              Branding identity untuk bisnis modern.
+            </p>
+
+            <button
+              onclick="openProject()"
+              class="gradient text-white px-5 py-3 rounded-xl"
+            >
+              Lihat Project
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHY US -->
+  <section id="whyus" class="py-24 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-20">
+
+        <h2 class="text-5xl font-bold text-gray-900 mb-6">
+          Kenapa Memilih Kami?
+        </h2>
+
+        <p class="text-gray-600">
+          Kami memberikan layanan profesional dan berkualitas tinggi.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover">
+
+          <i data-lucide="badge-check" class="w-14 h-14 text-blue-600 mb-6"></i>
+
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Kualitas Premium
+          </h3>
+
+          <p class="text-gray-600">
+            Mengutamakan kualitas dan kepuasan client.
+          </p>
+
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover">
+
+          <i data-lucide="clock-3" class="w-14 h-14 text-blue-600 mb-6"></i>
+
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Tepat Waktu
+          </h3>
+
+          <p class="text-gray-600">
+            Pengerjaan project cepat dan profesional.
+          </p>
+
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-lg card-hover">
+
+          <i data-lucide="headphones" class="w-14 h-14 text-blue-600 mb-6"></i>
+
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Support 24/7
+          </h3>
+
+          <p class="text-gray-600">
+            Tim support siap membantu kapan saja.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 bg-white">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="bg-gray-50 rounded-3xl shadow-2xl p-10">
+
+        <div class="text-center mb-16">
+
+          <h2 class="text-5xl font-bold text-gray-900 mb-6">
+            Kontak Lengkap
+          </h2>
+
+          <p class="text-gray-600">
+            Hubungi kami untuk konsultasi dan kebutuhan Anda.
+          </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-14">
+
+          <!-- LEFT -->
+          <div class="space-y-8">
+
+            <div class="flex gap-5">
+
+              <div class="gradient text-white p-4 rounded-2xl h-fit">
+                <i data-lucide="map-pin"></i>
+              </div>
+
+              <div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Alamat
+                </h3>
+
+                <p class="text-gray-600">
+                  Jl. Sudirman No.123 Jakarta Indonesia
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="flex gap-5">
+
+              <div class="gradient text-white p-4 rounded-2xl h-fit">
+                <i data-lucide="phone"></i>
+              </div>
+
+              <div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Telepon
+                </h3>
+
+                <p class="text-gray-600">
+                  +62 813-9832-2325 
+
+                 <p class="text-gray-600">
+                    +62 878-0206-4953
+
+              </div>
+
+            </div>
+
+            <div class="flex gap-5">
+
+              <div class="gradient text-white p-4 rounded-2xl h-fit">
+                <i data-lucide="mail"></i>
+              </div>
+
+              <div>
+
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Email
+                </h3>
+
+                <p class="text-gray-600">
+                  info@nexadigital.com
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="flex gap-4 pt-4">
+
+              <button
+                onclick="window.open('https://instagram.com')"
+                class="gradient text-white px-5 py-3 rounded-xl"
+              >
+                Instagram
+              </button>
+
+              <button
+                onclick="window.open('https://facebook.com')"
+                class="gradient text-white px-5 py-3 rounded-xl"
+              >
+                Facebook
+              </button>
+
+              <button
+                onclick="window.open('https://youtube.com')"
+                class="gradient text-white px-5 py-3 rounded-xl"
+              >
+                Youtube
+              </button>
+
+            </div>
+
+          </div>
+
+          <!-- RIGHT -->
+          <form id="contactForm" class="space-y-6">
+
+            <input
+              type="text"
+              placeholder="Nama Lengkap"
+              required
+              class="w-full p-4 rounded-2xl border border-gray-300 outline-none focus:border-blue-600"
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              class="w-full p-4 rounded-2xl border border-gray-300 outline-none focus:border-blue-600"
+            />
+
+            <input
+              type="text"
+              placeholder="Nomor Telepon"
+              required
+              class="w-full p-4 rounded-2xl border border-gray-300 outline-none focus:border-blue-600"
+            />
+
+            <textarea
+              rows="5"
+              placeholder="Pesan Anda"
+              required
+              class="w-full p-4 rounded-2xl border border-gray-300 outline-none focus:border-blue-600"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="gradient text-white w-full py-4 rounded-2xl font-bold text-lg"
+            >
+              Kirim Pesan
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-10">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <div class="flex items-center gap-4">
+
+        <img
+          src="images/WhatsApp Image 2026-05-21 at 21.30.06.jpeg"
+          class="w-30 h-14 rounded-xl"
+        />
+
+        <div>
+
+          <h2 class="text-2xl font-bold">
+            
+          </h2> PALUGADA.ID
+
+          <p class="text-gray-400">
+            
+          </p> layanan serba bisa untuk kebutuhan harian Anda.
+
+        </div>
+
+      </div>
+
+      <p class="text-gray-400">
+        © 2026 NexaDigital Company. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+
+    AOS.init({
+      duration:1000,
+      once:true
+    });
+
+    lucide.createIcons();
+
+    // SCROLL
+    function scrollToSection(id){
+
+      document.getElementById(id).scrollIntoView({
+        behavior:'smooth'
+      });
+
+    }
+
+    // SERVICE
+    function showService(service){
+
+      alert("Anda memilih layanan: " + service);
+
+    }
+
+    // PROJECT
+    function openProject(){
+
+      alert("Membuka detail project...");
+
+    }
+
+    // CONTACT FORM
+    document.getElementById('contactForm')
+    .addEventListener('submit', function(e){
+
+      e.preventDefault();
+
+      alert("Pesan berhasil dikirim!");
+
+      this.reset();
+
+    });
+
+  </script>
+
+</body>
+</html>
